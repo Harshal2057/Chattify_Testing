@@ -44,9 +44,9 @@ app.use(fileUpload({
 app.use("/api/auth" , authRouter);
 app.use("/api/messageroutes" , messageRoutes);
 
-app.get("/" , (req , res) => {
-    return res.send("<h1>Chattify</h1>")
-})
+// app.get("/" , (req , res) => {
+//     return res.send("<h1>Chattify</h1>")
+// })
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/Chattify/dist")));
