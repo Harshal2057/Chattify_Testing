@@ -82,6 +82,9 @@ const signUp = async (req, res) => {
 
 const login = async(req , res) => {
 
+  console.log("In login in backend");
+  
+
     try {
         const {email , password} = req.body;
 
